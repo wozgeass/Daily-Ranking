@@ -221,25 +221,27 @@ input.radio:focus ~ label:before {
 }
 
 
+/*Para money*/
+input[name^="cooperacion"]:hover:not(:checked) ~ label:before {
+	content:'\0024';
+}
+
+input[name^="cooperacion"]:checked ~ label:before {
+    content: '\0024';
+    color: #8FC7FF;
+    background-color: #40B6E1;
+}
+
 /* Radios rojos*/
-input[name*="rojo"]:hover:not(:checked) ~ label:before {
+input[name^="rojo"]:hover:not(:checked) ~ label:before {
 	content:'\2718';
 	text-indent: .9em;
 	color: #C2C2C2;
 }
 
-input[name*="rojo"]:checked ~ label:before {
+input[name^="rojo"]:checked ~ label:before {
     content: '\2718';
     text-indent: .9em;
 	color: #FF5387;
 	background-color: #FF2B4E;
-}
-
-/*Para money*/
-input[name*="cooperacion"]:hover:not(:checked) ~ label:before {
-	content:'\0024';
-}
-
-input[name*="cooperacion"]:checked ~ label:before {
-    content: '\0024';
 }

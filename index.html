@@ -7,7 +7,7 @@
 		<title>Daily Ranking Aztli Gnu/Linux</title>
 		<meta name="description" content="Tabla para la organizacion del Grupo" />
 		<meta name="keywords" content="Tabla para la organizacion del Grupo Aztli Gnu/Linux" />
-		<link rel="shortcut icon" href="aztli.ico"> 
+		<link rel="icon" type="image/png" href="aztli.png" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -23,18 +23,26 @@
 			<div class="component">
 				<h1>Aztli Gnu/Linux</h1>
 				<h2>Daily Ranking</h2>
-				<p>Para poder adquirir algun punto o acredor a algun fallo</p>
+                <p>Para poder adquirir algun punto o acredor a algun fallo</p>
+                <p>Los grises significan trabajo sin realizar</p>
+				<input type="radio" name="radio3" id="radio3" class="radio" disabled >
+				<label for="radio3">Pendiente</label>
+				<br>
+				<br>
+				<br>
 				<p>Los verdes significan trabajo realizado</p>
-				<input type="radio" name="radio" id="radio1" class="radio" align="center" />
+				<input type="radio" name="radio1" id="radio1" class="radio" align="center" checked >
 				<label for="radio1">Realizado</label>
 				<br>
 				<br>
 				<br>
-				<p>Los grises significan trabajo sin realizar</p>
-				<input type="radio" name="radio" id="radio2" class="radio" disabled />
-				<label for="radio2">Fracaso</label>
+                <p>Los Rojos significan trabajo NO realizado</p>
+				<input type="radio" name="radio2" id="radio2" class="radio-rojo" align="center" checked >
+				<label for="radio2">No realizado</label>
 				<br>
 				<br>
+                <br>
+				
 				<table>
 					<thead>
 						<tr>
@@ -57,8 +65,8 @@
 						<tr>
 						  <td class="user-name">Adrian</td>
 						  <td class="user-email">
-							<input type="radio" name="radio" id="radio3" title="Algo" class="radio" checked />
-							<label for="radio3">Dar su cooperacion Abril 1-4</label>
+							<input type="radio" name="radio3" id="radio4" title="Algo" class="radio" checked />
+							<label for="radio4">Dar su cooperacion Abril 1-4</label>
 							
 						  </td>
 						</tr>
